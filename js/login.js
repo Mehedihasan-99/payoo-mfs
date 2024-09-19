@@ -44,8 +44,3 @@ document.getElementById('btn-login')
         alert('Wrong phone number or pin')
     }
 })
-
-
-
-
-// step:1
