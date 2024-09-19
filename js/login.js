@@ -1,7 +1,7 @@
 // console.log('Hello')
 // step:1 set event handler
 // document.getElementById('btn-login').addEventListener('click', function(event){
-//     // step:2 prevent Default behavior(prevelent reloading browser)
+//     // step:2 prevent Default behavior(prevent reloading browser)
 //     event.preventDefault();
 //     console.log('login button clicked');
 
@@ -15,7 +15,7 @@
 //         console.log(Done)
 //     }
 //     else{
-//         console.log('incurret ')
+//         console.log('wrong')
 //     }
 // })
 
