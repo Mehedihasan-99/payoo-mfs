@@ -23,18 +23,18 @@
                 <div class="divider"></div>
                 <!-- User action buttons -->
                 <div>
-                    <button class="btn btn-lg">Add Money</button>
-                    <button class="btn btn-lg">Cash Out</button>
+                    <button id="btn-show-add-money" class="btn btn-lg">Add Money</button>
+                    <button id="btn-show-cash-out" class="btn btn-lg">Cash Out</button>
                 </div>
                 <div class="divider"></div>
                 <!-- add money form  -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input type="number" placeholder="Add amount" id="input-add-money" class="input input-bordered" required />
+                        <input type="number" placeholder="Add cash amount" id="input-add-money" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
@@ -43,14 +43,36 @@
                         <input type="password" placeholder="pin" id="input-pin-number" class="input input-bordered" autocomplete="off" required />
                       </div>
                       <div class="form-control mt-6">
-                        <button id="btn-add-money" class="btn btn-primary">Login</button>
+                        <button id="btn-add-money" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
-                  </div>
+                </div>
+                <!-- cash out form  -->
+                <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cashout Amount</span>
+                        </label>
+                        <input type="number" placeholder="cash out amount" id="input-cash-out" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input type="password" placeholder="pin" id="input-cash-out-pin" class="input input-bordered" autocomplete="off" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                      </div>
+                    </form>
+                </div>
               </div>
             </div>
         </div>
     </main>
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
 </body>
 </html>
